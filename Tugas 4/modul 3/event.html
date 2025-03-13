@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title> 
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initia-scale=1.0">
+    <meta name="author" content="Rahmanda Alvin">
+    <meta name="Nim" content="243307085">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav ul{
+            float: left;
+            padding: 20px;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 620px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width:600px){
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+    <section>
+        <nav><!-- navigasi halaman / link -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Gambar Pemandangan</h1>
+            <img src="gambar/gambar.jpg" alt="Pemandangan" width="300px" onmouseover="this.style.width='200px'" onmouseout="this.style.width='300px' ">
+            <img src="gambar/gambar1.jpg" alt="Pemandangan indah" width="300px" onmouseenter="this.style.border='5px solid red'" onmouseleave="this.style.border='none' ">
+            <img src="gambar/gambar2.jpg" alt="Pemandangan Menajubkan" width="300px" onclick="this.style.height='200px'"ondblclick="this.style.height='168px'">
+            <img src="gambar/gambar4.jpg" alt="gambar4" width="300px">
+            <img src="gambar/gambar5.jpg" alt="gambar5" width="300px">
+            <img src="gambar/gambar6.jpg" alt="Pemandangan" width="300px">
+             <p>
+                onmouseover dan onmouseout Gambar pertama mengecil saat di-hover dan kembali ke ukuran semula saat mouse keluar.
+                onmouseenter dan onmouseleave Gambar kedua mendapatkan border merah saat mouse masuk dan menghilang saat keluar.
+                onclick dan ondblclick Gambar ketiga berubah tinggi saat diklik dan kembali ke ukuran semula saat diklik dua kali.
+             </p>
+        </article>
+    </section>
+    <footer>
+        <p>@copyright By Rahmanda Alvin </p> <!-- ubah sesuai selera anda -->
+    </footer>
+</body>
+</html>

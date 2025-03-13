@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title> 
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initia-scale=1.0">
+    <meta name="author" content="Rahmanda Alvin">
+    <meta name="Nim" content="243307085">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav ul{
+            float: left;
+            padding: 20px;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 700px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width:600px){
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+    <section>
+        <nav><!-- navigasi halaman / link -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Judul Artikel</h1>
+            <!-- Konten disini -->
+             <canvas id="canvas" width="400" height="400" style="background-color: #333;"></canvas>
+
+             <p>
+                 Halaman ini dengan menambahkan javascript bisa menampilkan jam 
+             </p>
+        </article>
+    </section>
+    <footer>
+        <p>@copyright By Rahmanda Alvin </p> <!-- ubah sesuai selera anda -->
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
