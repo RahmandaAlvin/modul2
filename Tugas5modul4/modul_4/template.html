@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB CSS</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: blue;
+            color: yellow;
+            padding: 15px;
+            font-size: 30px;
+            font-weight: normal;
+            text-align: left;
+        }
+        header p {
+            margin-top: -4px;
+            color: white;
+            font-size: 16px;
+        }
+        .container {
+            margin-top: 20px;
+            width: 100%;   
+            display: flex;
+        }
+        .sidebar {
+            border: 2px dashed lightblue;
+            padding: 70px 70px 70px 10px;
+            text-align: left;
+        }
+        .sidebar a {
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            color: black;
+            padding: 5px ;
+            font-weight: normal;
+        }
+        .sidebar a:hover {
+            font-weight: bold;
+            color: blue;
+        }
+        .sidebar .hover-effect {
+            font-weight: bold;
+            color: black;
+        }
+        .content {
+            margin-left: 300px;
+            text-align: center;
+            width: 40%;
+        }
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+        .footer {
+        background-color: lightblue;
+        padding: 20px;
+        text-align:right;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        }
+
+        .motto {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    Halo CSS !
+    <p>Ini adalah Website CSS saya</p>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+            <a href="#" class="hover-effect">Menu 6</a>
+        </div>
+        <div class="content">
+            <img src="gambar/icon.png" class="logo" alt="Logo Politeknik Negeri Madiun">
+            <h2>TI</h2>
+            <p>Politeknik Negeri Madiun</p>
+            <p class="motto">
+                Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang 
+                berkualitas, inovatif dan berdaya saing Nasional.
+            </p>
+        </div>
+    </div>
+    <div class="footer">Rahmanda Alvin Saputra | 243307085 | TI-2C</div>
+</body>
+</html>

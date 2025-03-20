@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div p {
+        color: red;
+    }
+    div > p {
+        background-color: yellow;
+    }
+    div + p {
+        background-color: darkgray;
+    }
+    div ~ p {
+        color: cyan;
+    }
+</style>
+<body>
+    
+    <div>
+        <p>This is a paragraph. paragraf 1 menampilkan tulisan dengan warna merah dan background kuning </p>
+        <p>This is a paragraph. paragraf 2 menampilkan tulisan warna merah dengan background kuning</p>
+    </div>
+    <p>This is a paragraph. Paragraf 3 menampilkan tulisan berwarna cyan dengan background darkgray</p>
+    <p>This is a paragraph paragraf 4 menampilkan tulisan dengan warna cyan</p>
+</body>
+</html>
