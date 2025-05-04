@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Belajar CSS Grid Box</title>
+        <style>
+            .tempat_gid{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: #8ef321;
+                padding: 10px;
+               grid-gap: 50px;
+            }
+            .item_grid{
+                background-color: rgba(255,255,255,0.8);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tampilan:</h1>
+        <div class="tempat_gid">
+            <div class="item_grid">1</div>
+            <div class="item_grid">2</div>
+            <div class="item_grid">3</div>
+            <div class="item_grid">4</div>
+            <div class="item_grid">5</div>
+            <div class="item_grid">6</div>
+            <div class="item_grid">7</div>
+            <div class="item_grid">8</div>
+            <div class="item_grid">9</div>
+            <div>Tulis kesimpulan ujicoba skenario1:di dalam sebuah container grid, dapat di isi menggunakan grid lagi dengan menggunakan div dengan nama item_grid.</div>
+            <div>Tulis kesimpulan ujicoba skenario2:Dengan mengubah nilai properti display menjadi inline-grid, 
+                elemen akan tetap sejajar dengan elemen lain dalam satu baris jika memungkinkan, namun tetap dapat menggunakan grid untuk menata isinya secara lebih fleksibel.</div>
+            <div>Tulis kesimpulan ujicoba skenario3:Menggunakan properti grid-column-gap dan grid-row-gap dalam elemen grid memungkinkan pengaturan jarak antar kolom dan baris dengan fleksibel. 
+                grid-column-gap mengontrol jarak horizontal antar kolom, sedangkan grid-row-gap mengatur jarak vertikal antar baris. </div>
+            <div>Tulis kesimpulan ujicoba skenario4:Menggunakan properti grid-gap pada item grid berfungsi untuk memberikan jarak yang seragam antara kolom dan baris dalam sebuah grid.
+                 Ini membantu dalam meningkatkan keterbacaan dan estetika tata letak tanpa perlu mengatur margin secara manual pada setiap elemen. </div>
+        </div>
+    </body>
+</html>

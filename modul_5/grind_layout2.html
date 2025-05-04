@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Judul</title>
+    <style>
+        .grid_container{
+            display: grid;
+            grid-gap: 50px;
+            background-color: #33f321;
+            padding: 10px;
+            grid-template-columns: 10px 500px 20px 10px;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(255,255,255,0.8);
+            padding: 20px;
+            grid-column: 1/2;
+        }
+        .item{
+            background-color: rgba(255,255,255,0.8);
+            border: 1px solid rgba(0,0,0,0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="grid_container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+
+        </div>
+        <div>Tulis kesimpulan disini : Dengan menggunakan properti grid-column-start: 1; dan grid-column-end: 3;, 
+            elemen dalam grid akan membentang dari kolom pertama hingga kolom ketiga.</div>
+        <div>Tulis kesimpulan skenario2 disini :Dengan mengubah nilai grid-template-columns,
+            auto auto → Grid hanya memiliki dua kolom dengan lebar yang menyesuaikan kontennya.
+
+            70px 300px auto 40px → Grid memiliki empat kolom dengan lebar tetap untuk tiga kolom pertama dan satu kolom yang menyesuaikan kontennya (auto).
+
+            10px 500px 20px 10px → Grid memiliki empat kolom dengan lebar yang sudah ditentukan secara spesifik.
+        </div>
+        <div>Tulis Kesimpulan skenario 3:Dengan menggunakan properti grid-row: 1 / 4;, 
+            elemen dalam grid akan membentang dari baris pertama hingga baris keempat.
+            Jika rentang diperbesar (misalnya 1 / 5), elemen akan semakin memanjang ke bawah.
+
+            Jika rentang dipersempit (misalnya 1 / 2), elemen hanya akan berada dalam satu baris.</div>
+        <div>Tulis Kesimpulan skenario4: Dengan menggunakan properti grid-column: 1 / 4;, 
+            elemen dalam grid akan membentang dari kolom pertama hingga kolom keempat.
+            Jika rentang diperbesar (misalnya 1 / 5), elemen akan lebih lebar dan mencakup lebih banyak kolom.
+
+            Jika rentang dipersempit (misalnya 1 / 2), elemen hanya akan menempati satu kolom. </div>
+    </body>
+</html>

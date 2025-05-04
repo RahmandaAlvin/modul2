@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Flexbox</title>
+        <style>
+            .wadah_flex {
+                /* menjadi flexible dengan mengatur properti display dengan nilai flex.*/
+                display: flex;
+                background-color: #0f34c6;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            .wadah_flex div {
+                background-color: #69f0e4;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wadah_flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div> 
+            <div>5</div> 
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+        <p><b>Pada sekenario 3:</b> menambahkan flex-direction macam macam flex direction seperti row (untuk baris normal), 
+            row-reverse (jika ingin urutan baris dari kanan ke kiri),
+             column (elemen akan tersusun kebawah), column-reverse (jika urutan kolom dari atas ke bawah). </p>
+        <p><b>Pada sekenario 4 :</b> mengganti flex-direction menjadi flex-warp. 
+            macam - macam flex-warp nowarp(Semua elemen tetap dalam satu baris, bisa mengecil jika tidak cukup ruang.), 
+            warp (Elemen akan turun ke baris baru jika perlu.), warp-reverse (Sama seperti wrap, tapi baris baru muncul di atas.)</p>
+        <p><b>Pada sekenario 5:</b> mengganti flex-warp menjadi flex-flow untuk menggabungkan flex-direction dan flex-wrap. 
+            row nowrap (Elemen disusun sejajar dalam satu baris, tidak akan pindah ke baris baru.), 
+            column wrap ( Elemen disusun ke bawah (vertikal) dan bisa pindah ke kolom baru jika tidak cukup ruang.)
+        row wrap (Elemen berada dalam satu baris, tetapi akan pindah ke baris berikutnya jika tidak cukup ruang.), 
+        row-reverse warp-reverse (Elemen berada dalam satu baris dari kanan ke kiri, dan jika tidak cukup ruang, baris baru muncul di atasnya.)   </p>
+        <p><b>Pada sekenario 6 :</b>mengganti flex-flow menjadi justify-content. 
+            justify-content digunakan untuk mengatur posisi elemen di dalam wadah flex.
+             Ada beberapa nilai yang bisa digunakan, antara lain: flex-start (elemen akan berada di sisi kiri wadah flex), 
+             flex-end (elemen akan berada di sisi kanan wadah flex), center (elemen akan berada di tengah wadah flex), 
+             space-around (elemen akan berada di sekitar wadah flex dengan jarak yang sama), 
+             space-between (elemen akan berada di antara wadah flex dengan jarak yang sama), 
+             spacer-evenly (Elemen tersebar merata dengan jarak yang benar-benar sama di antara elemen dan di kedua ujung.).</p>
+    </body>
+</html>
