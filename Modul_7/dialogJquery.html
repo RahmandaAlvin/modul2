@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #tombol{
+            background-color: rgb(0, 174, 255);
+            color: white;
+            padding: 7px;
+            border-radius: 5px;
+            border: 2px solid rgb(0, 174, 255);
+        }
+        #modal{
+            background-color: #f0f0f0;
+            position: absolute;
+            display: block;
+            width: 500px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        #close-button{
+            background-color: crimson;
+            color: white;
+            padding: 2px;
+            border: 1px solid crimson;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <button id="tombol">KLIK ini</button>
+    <div id="modal">
+        <div id="close">
+            <div id="close-button">X</div>
+        </div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur eveniet enim molestias laboriosam repudiandae blanditiis consequuntur aperiam sapiente repellendus voluptatibus,
+         repellat expedita corporis earum deleniti suscipit fuga aliquam doloribus. 
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolor sit aperiam itaque doloribus a ex neque enim animi, quaerat, beatae dicta corporis debitis
+          maiores soluta nostrum, mollitia provident dolore? 
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#tombol").click(function(){
+                $("#modal").show(1000);
+            })
+            $("#close-button").click(function(){
+                $("#modal").hide(1000);
+            })
+        })
+    </script>
+</body>
+</html>

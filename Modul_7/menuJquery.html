@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jqu ery-3.6.0.min.js"></script>
+    <style>
+        .navbar{
+            background-color: red;
+            color: white;
+         padding: 10px 0;
+         
+            
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            
+            margin-right: 50px;
+            padding: 0;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 20px;
+        }
+        .navbar ul li a:hover{
+            background-color: rgb(255, 103, 103);
+            padding: 10px;
+            border-radius:10px ;
+        }
+        .navbar ul li ul{
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
+            border-radius:5px;
+            padding: 5px;
+            
+          
+        }
+    </style>
+</head> 
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+            <ul>
+                <li>About 1</li>
+                <li>About 2</li>
+                <li>About 3</li>
+            </ul></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+            </ul></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".navbar li").hover(function(){
+                $(this).find("ul").slideToggle("normal");
+            })
+        })
+    </script>
+</body>
+</html>
